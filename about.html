@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Το Κέντρο | e_synergo — ΣυνΕργώ Αχαρναί</title>
+  <meta name="description" content="Γνωρίστε το e_synergo - Κέντρο Ειδικών Θεραπειών στις Αχαρνές. Φιλοσοφία, ομάδα, χώρος και διαδικασία." />
+  <meta name="theme-color" content="#5E8BB0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: {
+        cream: '#FFFDF8',
+        brand: {
+          purple: '#5E8BB0', 'purple-dark': '#466F92',
+          coral: '#E89485', yellow: '#F5C84C', lavender: '#B69BD8',
+          green: '#A4B36F', blue: '#8FC4E0', pink: '#E89BA8',
+          ink: '#3A4A5C', muted: '#6B7884'
+        }
+      }}}
+    }
+  </script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="bg-cream text-brand-ink">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 bg-cream/85 backdrop-blur-md border-b border-brand-purple/10 no-print">
+    <nav class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between" aria-label="Κύρια πλοήγηση">
+      <a href="index.html" class="flex items-center gap-3 group" aria-label="e_synergo - Αρχική">
+        <img src="assets/logo.png" alt="e_synergo ΣυνΕργώ" class="h-12 w-auto group-hover:scale-105 transition" />
+      </a>
+      <ul class="hidden md:flex items-center gap-7 text-sm font-semibold">
+        <li><a href="index.html" class="hover:text-brand-purple transition">Αρχική</a></li>
+        <li><a href="services.html" class="hover:text-brand-purple transition">Υπηρεσίες</a></li>
+        <li><a href="about.html" class="text-brand-purple">Το Κέντρο</a></li>
+        <li><a href="contact.html" class="hover:text-brand-purple transition">Επικοινωνία</a></li>
+      </ul>
+      <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-brand-purple text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-purple-dark transition shadow-md">Κλείστε ραντεβού →</a>
+      <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-brand-purple/10" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="md:hidden bg-cream border-t border-brand-purple/10">
+      <ul class="px-5 py-4 space-y-3 font-semibold">
+        <li><a href="index.html" class="block py-2">Αρχική</a></li>
+        <li><a href="services.html" class="block py-2">Υπηρεσίες</a></li>
+        <li><a href="about.html" class="block py-2 text-brand-purple">Το Κέντρο</a></li>
+        <li><a href="contact.html" class="block py-2">Επικοινωνία</a></li>
+        <li><a href="contact.html" class="block bg-brand-purple text-white text-center py-3 rounded-full mt-2">Κλείστε ραντεβού</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden py-16 md:py-24">
+    <div class="blob bg-brand-lavender w-[400px] h-[400px] -top-20 -right-20"></div>
+    <div class="blob bg-brand-coral w-[350px] h-[350px] top-40 -left-20"></div>
+    <div class="relative max-w-4xl mx-auto px-5 text-center">
+      <span class="inline-block bg-brand-purple/10 text-brand-purple-dark px-4 py-1.5 rounded-full text-sm font-bold mb-5">ΤΟ ΚΕΝΤΡΟ ΜΑΣ</span>
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-5">Γνωρίστε το <span class="underline-wavy">e_synergo</span>.</h1>
+      <p class="text-lg md:text-xl text-brand-muted max-w-2xl mx-auto">Συνεργαζόμαστε με το παιδί, την οικογένεια και τους εκπαιδευτικούς για να χτίσουμε γέφυρες ανάμεσα στη θεραπεία και την καθημερινότητα.</p>
+    </div>
+  </section>
+
+  <!-- ΦΙΛΟΣΟΦΙΑ -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-14 items-center">
+      <div>
+        <div class="aspect-[4/5] max-w-md mx-auto rounded-[2.5rem] overflow-hidden bg-gradient-to-br from-brand-yellow/40 via-brand-coral/30 to-brand-lavender/30 flex items-center justify-center p-10">
+          <img src="assets/logo.png" alt="e_synergo logo" class="w-full h-full object-contain" />
+        </div>
+      </div>
+      <div>
+        <span class="inline-block text-brand-purple font-bold mb-3">Η ΦΙΛΟΣΟΦΙΑ ΜΑΣ</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-5">Κάθε παιδί έχει τη δική του ιστορία.</h2>
+        <p class="text-lg text-brand-muted mb-5">
+          Πιστεύουμε ότι η πραγματική πρόοδος έρχεται όταν αναγνωρίζουμε τη μοναδικότητα κάθε παιδιού και χτίζουμε γύρω του ένα δίκτυο στήριξης — με γονείς, θεραπευτές και σχολείο σε στενή συνεργασία.
+        </p>
+        <p class="text-lg text-brand-muted">
+          Το όνομα <strong>ΣυνΕργώ</strong> αντικατοπτρίζει αυτή τη φιλοσοφία: δουλεύουμε μαζί. Με σεβασμό στον ρυθμό του παιδιού, με ειλικρίνεια απέναντι στους γονείς, και με συνεχή ενημέρωση πάνω στις πιο σύγχρονες θεραπευτικές προσεγγίσεις.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ΑΞΙΕΣ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center mb-14">
+        <span class="inline-block text-brand-purple font-bold mb-3">ΟΙ ΑΞΙΕΣ ΜΑΣ</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold">Τι μας καθοδηγεί</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-7 rounded-3xl border border-brand-purple/5">
+          <div class="w-14 h-14 rounded-2xl bg-brand-coral/30 flex items-center justify-center text-3xl mb-4">🤝</div>
+          <h3 class="font-bold text-xl mb-2">Συνεργασία</h3>
+          <p class="text-brand-muted">Καμία θεραπεία δεν λειτουργεί απομονωμένη. Δουλεύουμε ως ομάδα με γονείς, εκπαιδευτικούς και άλλους ειδικούς.</p>
+        </div>
+        <div class="bg-white p-7 rounded-3xl border border-brand-purple/5">
+          <div class="w-14 h-14 rounded-2xl bg-brand-lavender/30 flex items-center justify-center text-3xl mb-4">💛</div>
+          <h3 class="font-bold text-xl mb-2">Ζεστασιά</h3>
+          <p class="text-brand-muted">Ένα ασφαλές, παιχνιδιάρικο περιβάλλον όπου τα παιδιά νιώθουν αποδεκτά και οι γονείς ακούγονται χωρίς κρίση.</p>
+        </div>
+        <div class="bg-white p-7 rounded-3xl border border-brand-purple/5">
+          <div class="w-14 h-14 rounded-2xl bg-brand-green/30 flex items-center justify-center text-3xl mb-4">🎯</div>
+          <h3 class="font-bold text-xl mb-2">Επιστημονικότητα</h3>
+          <p class="text-brand-muted">Τεκμηριωμένες προσεγγίσεις, σύγχρονα εργαλεία αξιολόγησης και συνεχιζόμενη εκπαίδευση της ομάδας.</p>
+        </div>
+        <div class="bg-white p-7 rounded-3xl border border-brand-purple/5">
+          <div class="w-14 h-14 rounded-2xl bg-brand-yellow/50 flex items-center justify-center text-3xl mb-4">🌱</div>
+          <h3 class="font-bold text-xl mb-2">Εξατομίκευση</h3>
+          <p class="text-brand-muted">Κάθε παιδί έχει το δικό του πλάνο, χτισμένο στις δυνάμεις και τις προκλήσεις του.</p>
+        </div>
+        <div class="bg-white p-7 rounded-3xl border border-brand-purple/5">
+          <div class="w-14 h-14 rounded-2xl bg-brand-pink/30 flex items-center justify-center text-3xl mb-4">🔍</div>
+          <h3 class="font-bold text-xl mb-2">Διαφάνεια</h3>
+          <p class="text-brand-muted">Ξεκάθαροι στόχοι, τακτικές αναφορές προόδου και ειλικρινής επικοινωνία με τους γονείς.</p>
+        </div>
+        <div class="bg-white p-7 rounded-3xl border border-brand-purple/5">
+          <div class="w-14 h-14 rounded-2xl bg-brand-blue/30 flex items-center justify-center text-3xl mb-4">🎨</div>
+          <h3 class="font-bold text-xl mb-2">Δημιουργικότητα</h3>
+          <p class="text-brand-muted">Το παιχνίδι είναι η γλώσσα του παιδιού. Μέσα από αυτό χτίζουμε μάθηση και πρόοδο.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ΟΜΑΔΑ -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center mb-14">
+        <span class="inline-block text-brand-purple font-bold mb-3">Η ΟΜΑΔΑ ΜΑΣ</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Οι άνθρωποι πίσω από το e_synergo</h2>
+        <p class="text-lg text-brand-muted max-w-2xl mx-auto">Εξειδικευμένοι επαγγελματίες, με κοινό στόχο: την ευημερία κάθε παιδιού.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Επαναλαμβανόμενο template - αντικαταστήστε με πραγματικά μέλη -->
+        <div class="bg-cream rounded-3xl p-6 border border-brand-purple/5 text-center">
+          <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-brand-coral/40 to-brand-yellow/40 mb-4 flex items-center justify-center text-5xl">👩‍⚕️</div>
+          <h3 class="font-bold text-lg">Ελένη Βίλα</h3>
+          <p class="text-sm text-brand-purple font-semibold mb-2">Ιδρύτρια & Επιστημονική Υπεύθυνη</p>
+          <p class="text-sm text-brand-muted">[ Σύντομο βιογραφικό, πτυχία, εξειδίκευση ]</p>
+        </div>
+
+        <div class="bg-cream rounded-3xl p-6 border border-brand-purple/5 text-center">
+          <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-brand-lavender/40 to-brand-pink/40 mb-4 flex items-center justify-center text-5xl">👩‍🏫</div>
+          <h3 class="font-bold text-lg">[ Όνομα ]</h3>
+          <p class="text-sm text-brand-purple font-semibold mb-2">Λογοθεραπεύτρια</p>
+          <p class="text-sm text-brand-muted">[ Σύντομο βιογραφικό, ειδικότητες ]</p>
+        </div>
+
+        <div class="bg-cream rounded-3xl p-6 border border-brand-purple/5 text-center">
+          <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-brand-blue/40 to-brand-green/40 mb-4 flex items-center justify-center text-5xl">👨‍⚕️</div>
+          <h3 class="font-bold text-lg">[ Όνομα ]</h3>
+          <p class="text-sm text-brand-purple font-semibold mb-2">Εργοθεραπευτής</p>
+          <p class="text-sm text-brand-muted">[ Σύντομο βιογραφικό, ειδικότητες ]</p>
+        </div>
+
+        <div class="bg-cream rounded-3xl p-6 border border-brand-purple/5 text-center">
+          <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-brand-yellow/50 to-brand-coral/40 mb-4 flex items-center justify-center text-5xl">👩‍🎓</div>
+          <h3 class="font-bold text-lg">[ Όνομα ]</h3>
+          <p class="text-sm text-brand-purple font-semibold mb-2">Ειδική Παιδαγωγός</p>
+          <p class="text-sm text-brand-muted">[ Σύντομο βιογραφικό, ειδικότητες ]</p>
+        </div>
+
+        <div class="bg-cream rounded-3xl p-6 border border-brand-purple/5 text-center">
+          <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-brand-pink/40 to-brand-lavender/40 mb-4 flex items-center justify-center text-5xl">🧠</div>
+          <h3 class="font-bold text-lg">[ Όνομα ]</h3>
+          <p class="text-sm text-brand-purple font-semibold mb-2">Παιδοψυχολόγος</p>
+          <p class="text-sm text-brand-muted">[ Σύντομο βιογραφικό, ειδικότητες ]</p>
+        </div>
+
+        <div class="bg-gradient-to-br from-brand-purple to-brand-purple-dark text-white rounded-3xl p-6 text-center flex flex-col justify-center">
+          <div class="text-5xl mb-3">✨</div>
+          <h3 class="font-bold text-lg mb-2">Θέλετε να μάθετε περισσότερα;</h3>
+          <p class="text-sm text-white/85 mb-4">Κλείστε ραντεβού γνωριμίας με την ομάδα μας.</p>
+          <a href="contact.html" class="inline-block bg-white text-brand-purple-dark font-bold px-4 py-2 rounded-full text-sm">Επικοινωνία</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ΧΩΡΟΣ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center mb-12">
+        <span class="inline-block text-brand-purple font-bold mb-3">Ο ΧΩΡΟΣ ΜΑΣ</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Φτιαγμένος για τα παιδιά</h2>
+        <p class="text-lg text-brand-muted max-w-2xl mx-auto">Φωτεινός, ευχάριστος και πλήρως εξοπλισμένος με σύγχρονα θεραπευτικά εργαλεία.</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="aspect-square rounded-2xl bg-gradient-to-br from-brand-coral/40 to-brand-yellow/40 flex items-center justify-center text-brand-muted text-sm font-semibold">[ φωτο 1 ]</div>
+        <div class="aspect-square rounded-2xl bg-gradient-to-br from-brand-lavender/40 to-brand-pink/40 flex items-center justify-center text-brand-muted text-sm font-semibold">[ φωτο 2 ]</div>
+        <div class="aspect-square rounded-2xl bg-gradient-to-br from-brand-blue/40 to-brand-green/40 flex items-center justify-center text-brand-muted text-sm font-semibold">[ φωτο 3 ]</div>
+        <div class="aspect-square rounded-2xl bg-gradient-to-br from-brand-yellow/50 to-brand-coral/30 flex items-center justify-center text-brand-muted text-sm font-semibold">[ φωτο 4 ]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-5xl mx-auto px-5">
+      <div class="bg-gradient-to-br from-brand-purple to-brand-purple-dark text-white rounded-[2.5rem] p-10 md:p-14 text-center relative overflow-hidden">
+        <div class="blob bg-brand-yellow w-[300px] h-[300px] -top-20 -left-20"></div>
+        <div class="relative">
+          <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Επισκεφτείτε μας</h2>
+          <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">Ελάτε να γνωριστούμε από κοντά. Σωκράτους 130, Αχαρναί.</p>
+          <a href="contact.html" class="inline-block bg-white text-brand-purple-dark px-7 py-4 rounded-full font-bold hover:bg-brand-yellow hover:text-brand-ink transition shadow-lg">Κλείστε ραντεβού →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-ink text-white/85 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-4 gap-10 mb-10">
+      <div class="md:col-span-2">
+        <div class="bg-white/95 inline-block rounded-2xl p-3 mb-5">
+          <img src="assets/logo.png" alt="e_synergo ΣυνΕργώ" class="h-14 w-auto" />
+        </div>
+        <p class="text-sm leading-relaxed max-w-sm">Κέντρο Ειδικών Θεραπειών για παιδιά και οικογένειες. Στηρίζουμε κάθε παιδί να εξελιχθεί στον δικό του ρυθμό.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-white mb-4">Σύνδεσμοι</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="services.html" class="hover:text-brand-yellow transition">Υπηρεσίες</a></li>
+          <li><a href="about.html" class="hover:text-brand-yellow transition">Το Κέντρο</a></li>
+          <li><a href="contact.html" class="hover:text-brand-yellow transition">Επικοινωνία</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-white mb-4">Επικοινωνία</h4>
+        <ul class="space-y-2 text-sm">
+          <li>📍 Σωκράτους 130, Αχαρναί</li>
+          <li>📞 <a href="tel:" class="hover:text-brand-yellow">[ Τηλέφωνο ]</a></li>
+          <li>✉️ <a href="mailto:" class="hover:text-brand-yellow">[ Email ]</a></li>
+          <li class="pt-2"><a href="https://www.instagram.com/e_synergo/" target="_blank" rel="noopener" class="hover:text-brand-yellow">@e_synergo</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 max-w-7xl mx-auto px-5 text-center text-sm text-white/60">
+      <p>© <span id="year"></span> e_synergo — ΣυνΕργώ. Με την επιφύλαξη παντός δικαιώματος.</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

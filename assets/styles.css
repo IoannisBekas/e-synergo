@@ -1,0 +1,79 @@
+/* e_synergo — custom styles on top of Tailwind */
+
+:root {
+  --color-cream: #FFFDF8;
+  --color-coral: #E89485;
+  --color-yellow: #F5C84C;
+  --color-lavender: #B69BD8;
+  --color-lavender-dark: #8E73B8;
+  --color-sky: #8FC4E0;
+  --color-sky-dark: #5E8BB0;
+  --color-sage: #A4B36F;
+  --color-rose: #E89BA8;
+  --color-ink: #3A4A5C;
+  --color-muted: #6B7884;
+  /* Primary brand color = the blue used in logo text & mascot */
+  --color-brand: #5E8BB0;
+  --color-brand-dark: #466F92;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { font-family: 'Quicksand', 'Nunito', sans-serif; letter-spacing: -0.01em; }
+
+/* Decorative blob backgrounds */
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Hand-drawn underline accent */
+.underline-wavy {
+  background-image: linear-gradient(transparent 70%, var(--color-yellow) 70%);
+  background-size: 100% 100%;
+  padding: 0 0.15em;
+}
+
+/* Service card hover */
+.service-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -20px rgba(43, 36, 64, 0.18);
+}
+
+/* Subtle floating animation for hero illustration */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.float-slow { animation: float 6s ease-in-out infinite; }
+
+/* Mobile menu */
+#mobile-menu { transition: max-height 0.3s ease, opacity 0.3s ease; }
+#mobile-menu.hidden-menu { max-height: 0; opacity: 0; overflow: hidden; }
+#mobile-menu.open-menu { max-height: 500px; opacity: 1; }
+
+/* Focus styles for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 3px solid var(--color-brand);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Print-friendly */
+@media print {
+  .no-print { display: none !important; }
+}
