@@ -27,6 +27,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Scroll-reveal animations (intersection observer)
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+    revealEls.forEach((el) => io.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add('in-view'));
+  }
+
   // Contact form (front-end stub — wire to Formspree/Web3Forms in production)
   const form = document.getElementById('contact-form');
   if (form) {
