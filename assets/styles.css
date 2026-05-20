@@ -159,3 +159,34 @@ section[id], [id^="service-"], #ergotherapy, #logotherapy, #special-education, #
 button:focus-visible, a:focus-visible {
   outline-offset: 4px;
 }
+
+/* Inverts a dark logo to crisp white for placement on dark backgrounds */
+.brand-mark-light {
+  filter: brightness(0) invert(1);
+  opacity: 0.65;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+a:hover .brand-mark-light,
+.brand-mark-light:hover {
+  opacity: 1;
+  transform: scale(1.04);
+}
+
+/* Footer credit treatment */
+.credit-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.875rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s ease;
+}
+.credit-line:hover { color: rgba(255, 255, 255, 0.95); }
+.credit-divider {
+  width: 1px;
+  height: 1.25rem;
+  background: rgba(255, 255, 255, 0.18);
+}
