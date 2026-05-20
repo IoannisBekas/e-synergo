@@ -17,20 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: { extend: { colors: {
-        cream: '#FFFDF8',
-        brand: {
-          purple: '#5E8BB0', 'purple-dark': '#466F92',
-          coral: '#E89485', yellow: '#F5C84C', lavender: '#B69BD8',
-          green: '#A4B36F', blue: '#8FC4E0', pink: '#E89BA8',
-          ink: '#3A4A5C', muted: '#6B7884'
-        }
-      }}}
-    }
-  </script>
+  <link rel="stylesheet" href="assets/tailwind.css" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body class="bg-cream text-brand-ink">
@@ -41,7 +28,7 @@
   <header class="sticky top-0 z-50 bg-cream/85 backdrop-blur-md border-b border-brand-purple/10 no-print">
     <nav class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between" aria-label="Κύρια πλοήγηση">
       <a href="index.html" class="flex items-center gap-3 group" aria-label="e_synergo - Αρχική">
-        <img src="assets/logo.png" alt="e_synergo ΣυνΕργώ" class="h-12 w-auto group-hover:scale-105 transition" />
+        <img src="assets/logo.webp" alt="e_synergo ΣυνΕργώ" class="h-12 w-auto group-hover:scale-105 transition" />
       </a>
       <ul class="hidden md:flex items-center gap-7 text-sm font-semibold">
         <li><a href="index.html" class="hover:text-brand-purple transition">Αρχική</a></li>
@@ -162,7 +149,7 @@
 
           <label class="flex items-start gap-3 mb-6 text-sm">
             <input type="checkbox" id="gdpr" name="gdpr" required class="mt-1 w-5 h-5 accent-brand-purple" />
-            <span class="text-brand-muted">Συναινώ στην επεξεργασία των προσωπικών μου δεδομένων από το e_synergo αποκλειστικά για σκοπούς επικοινωνίας, σύμφωνα με την <a href="#" class="text-brand-purple underline">Πολιτική Απορρήτου</a>. *</span>
+            <span class="text-brand-muted">Συναινώ στην επεξεργασία των προσωπικών μου δεδομένων από το e_synergo αποκλειστικά για σκοπούς επικοινωνίας, σύμφωνα με την <a href="privacy.html" class="text-brand-purple underline" target="_blank">Πολιτική Απορρήτου</a>. *</span>
           </label>
 
           <!-- Honeypot anti-spam -->
@@ -240,7 +227,7 @@
     <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-4 gap-10 mb-10">
       <div class="md:col-span-2">
         <div class="bg-white/95 inline-block rounded-2xl p-3 mb-5">
-          <img src="assets/logo.png" alt="e_synergo ΣυνΕργώ" class="h-14 w-auto" />
+          <img src="assets/logo.webp" alt="e_synergo ΣυνΕργώ" class="h-14 w-auto" />
         </div>
         <p class="text-sm leading-relaxed max-w-sm">Κέντρο Ειδικών Θεραπειών για παιδιά και οικογένειες. Στηρίζουμε κάθε παιδί να εξελιχθεί στον δικό του ρυθμό.</p>
       </div>
@@ -250,6 +237,8 @@
           <li><a href="services.html" class="hover:text-brand-yellow transition">Υπηρεσίες</a></li>
           <li><a href="about.html" class="hover:text-brand-yellow transition">Το Κέντρο</a></li>
           <li><a href="contact.html" class="hover:text-brand-yellow transition">Επικοινωνία</a></li>
+          <li class="pt-2 border-t border-white/10 mt-2"><a href="privacy.html" class="hover:text-brand-yellow transition">Πολιτική Απορρήτου</a></li>
+          <li><a href="cookies.html" class="hover:text-brand-yellow transition">Πολιτική Cookies</a></li>
         </ul>
       </div>
       <div>
@@ -271,7 +260,7 @@
       <p>© <span id="year"></span> e_synergo — ΣυνΕργώ. Με την επιφύλαξη παντός δικαιώματος.</p>
       <a href="https://www.bisolutions.group/" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-white transition group" aria-label="Σχεδιασμός & ανάπτυξη από BI Solutions">
         <span>Σχεδιασμός & ανάπτυξη από</span>
-        <img src="assets/BI%20Solutions.png" alt="BI Solutions" class="h-7 w-auto bg-white/95 rounded px-2 py-1 group-hover:scale-105 transition" />
+        <img src="assets/BI%20Solutions.webp" alt="BI Solutions" class="h-7 w-auto bg-white/95 rounded px-2 py-1 group-hover:scale-105 transition" />
       </a>
     </div>
   </footer>
