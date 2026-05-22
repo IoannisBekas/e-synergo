@@ -7,8 +7,9 @@
   <meta name="description" content="Επικοινωνήστε με το e_synergo. Σωκράτους 130, Αχαρναί. Κλείστε ραντεβού γνωριμίας." />
   <meta name="theme-color" content="#5E8BB0" />
   <link rel="canonical" href="https://ioannisbekas.github.io/e-synergo/contact.html" />
-  <link rel="icon" type="image/png" href="assets/logo.png" />
-  <link rel="apple-touch-icon" href="assets/logo.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
   <meta property="og:title" content="Επικοινωνία | e_synergo" />
   <meta property="og:description" content="Σωκράτους 130, Αχαρναί. Κλείστε ραντεβού γνωριμίας με το e_synergo." />
   <meta property="og:image" content="assets/logo.png" />
@@ -27,8 +28,11 @@
   <!-- HEADER -->
   <header class="sticky top-0 z-50 bg-cream/85 backdrop-blur-md border-b border-brand-purple/10 no-print">
     <nav class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between" aria-label="Κύρια πλοήγηση">
-      <a href="index.html" class="flex items-center gap-3 group" aria-label="e_synergo - Αρχική">
-        <img src="assets/logo.webp" alt="e_synergo ΣυνΕργώ" class="h-12 w-auto group-hover:scale-105 transition" />
+      <a href="index.html" class="block group" aria-label="ΣυνΕργώ - Αρχική">
+        <picture>
+          <source media="(min-width: 768px)" srcset="assets/header-logo-desktop.webp" />
+          <img src="assets/header-logo-mobile.webp" alt="ΣυνΕργώ — Κέντρο Ειδικών Θεραπειών — Βίγλα Ελένη" class="h-12 md:h-14 lg:h-16 w-auto group-hover:scale-105 transition" />
+        </picture>
       </a>
       <ul class="hidden md:flex items-center gap-7 text-sm font-semibold">
         <li><a href="index.html" class="hover:text-brand-purple transition">Αρχική</a></li>
@@ -74,22 +78,33 @@
   <section class="py-10">
     <div class="max-w-7xl mx-auto px-5 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
       <div class="bg-white rounded-3xl p-6 border border-brand-purple/5 text-center">
-        <div class="w-14 h-14 mx-auto rounded-2xl bg-brand-coral/30 flex items-center justify-center text-3xl mb-4">📍</div>
+        <div class="w-16 h-16 mx-auto rounded-2xl bg-brand-coral/15 flex items-center justify-center mb-4">
+          <img src="assets/icon-address.svg" alt="" class="w-9 h-9" aria-hidden="true" />
+        </div>
         <h3 class="font-bold mb-1">Διεύθυνση</h3>
         <p class="text-sm text-brand-muted">Σωκράτους 130<br>Αχαρναί</p>
       </div>
       <div class="bg-white rounded-3xl p-6 border border-brand-purple/5 text-center">
-        <div class="w-14 h-14 mx-auto rounded-2xl bg-brand-green/30 flex items-center justify-center text-3xl mb-4">📞</div>
+        <div class="w-16 h-16 mx-auto rounded-2xl bg-brand-green/15 flex items-center justify-center mb-4">
+          <img src="assets/icon-phone.svg" alt="" class="w-9 h-9" aria-hidden="true" />
+        </div>
         <h3 class="font-bold mb-1">Τηλέφωνο</h3>
         <a href="tel:" class="text-sm text-brand-purple font-semibold hover:underline">[ Συμπληρώστε ]</a>
       </div>
       <div class="bg-white rounded-3xl p-6 border border-brand-purple/5 text-center">
-        <div class="w-14 h-14 mx-auto rounded-2xl bg-brand-blue/30 flex items-center justify-center text-3xl mb-4">✉️</div>
+        <div class="w-16 h-16 mx-auto rounded-2xl bg-brand-blue/15 flex items-center justify-center mb-4">
+          <img src="assets/icon-mail.svg" alt="" class="w-9 h-9" aria-hidden="true" />
+        </div>
         <h3 class="font-bold mb-1">Email</h3>
-        <a href="mailto:" class="text-sm text-brand-purple font-semibold hover:underline break-all">[ Συμπληρώστε ]</a>
+        <a href="mailto:vigla@e-synergo.gr" class="text-sm text-brand-purple font-semibold hover:underline break-all">vigla@e-synergo.gr</a>
       </div>
       <div class="bg-white rounded-3xl p-6 border border-brand-purple/5 text-center">
-        <div class="w-14 h-14 mx-auto rounded-2xl bg-brand-yellow/50 flex items-center justify-center text-3xl mb-4">🕐</div>
+        <div class="w-16 h-16 mx-auto rounded-2xl bg-brand-yellow/30 flex items-center justify-center mb-4">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#5E8BB0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
         <h3 class="font-bold mb-1">Ωράριο</h3>
         <p class="text-sm text-brand-muted">Δευ - Παρ<br>09:00 - 21:00</p>
       </div>
@@ -227,7 +242,7 @@
     <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-4 gap-10 mb-10">
       <div class="md:col-span-2">
         <div class="bg-white/95 inline-block rounded-2xl p-3 mb-5">
-          <img src="assets/logo.webp" alt="e_synergo ΣυνΕργώ" class="h-14 w-auto" />
+          <img src="assets/footer-logo.webp" alt="ΣυνΕργώ — Κέντρο Ειδικών Θεραπειών — Βίγλα Ελένη" class="h-20 w-auto" />
         </div>
         <p class="text-sm leading-relaxed max-w-sm">Κέντρο Ειδικών Θεραπειών για παιδιά και οικογένειες. Στηρίζουμε κάθε παιδί να εξελιχθεί στον δικό του ρυθμό.</p>
       </div>

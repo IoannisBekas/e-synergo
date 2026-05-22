@@ -8,7 +8,8 @@
   <meta name="theme-color" content="#5E8BB0" />
   <meta name="robots" content="noindex, follow" />
   <link rel="canonical" href="https://ioannisbekas.github.io/e-synergo/cookies.html" />
-  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,8 +23,11 @@
 
   <header class="sticky top-0 z-50 bg-cream/85 backdrop-blur-md border-b border-brand-purple/10 no-print">
     <nav class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between" aria-label="Κύρια πλοήγηση">
-      <a href="index.html" class="flex items-center gap-3 group" aria-label="e_synergo - Αρχική">
-        <img src="assets/logo.webp" alt="e_synergo ΣυνΕργώ" class="h-12 w-auto group-hover:scale-105 transition" />
+      <a href="index.html" class="block group" aria-label="ΣυνΕργώ - Αρχική">
+        <picture>
+          <source media="(min-width: 768px)" srcset="assets/header-logo-desktop.webp" />
+          <img src="assets/header-logo-mobile.webp" alt="ΣυνΕργώ — Κέντρο Ειδικών Θεραπειών — Βίγλα Ελένη" class="h-12 md:h-14 w-auto group-hover:scale-105 transition" />
+        </picture>
       </a>
       <a href="index.html" class="text-sm font-bold text-brand-purple hover:underline">← Αρχική</a>
     </nav>
