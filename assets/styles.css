@@ -13,8 +13,8 @@
   --color-ink: #3A4A5C;
   --color-muted: #6B7884;
   /* Primary brand color = the blue used in logo text & mascot */
-  --color-brand: #5E8BB0;
-  --color-brand-dark: #466F92;
+  --color-brand: #0267C1;
+  --color-brand-dark: #01529B;
 }
 
 html { scroll-behavior: smooth; }
@@ -131,16 +131,16 @@ section[id], [id^="service-"], #ergotherapy, #logotherapy, #special-education, #
   border-radius: 9999px;
   background: var(--color-brand);
   color: white;
-  box-shadow: 0 12px 28px -8px rgba(94, 139, 176, 0.6);
+  box-shadow: 0 12px 28px -8px rgba(2, 103, 193, 0.6);
   transition: transform 0.2s, box-shadow 0.2s;
   animation: pulse-ring 2.4s ease-out infinite;
 }
 .mobile-call-fab:hover, .mobile-call-fab:focus-visible { transform: scale(1.08); }
 @media (min-width: 768px) { .mobile-call-fab { display: none; } }
 @keyframes pulse-ring {
-  0% { box-shadow: 0 12px 28px -8px rgba(94, 139, 176, 0.6), 0 0 0 0 rgba(94, 139, 176, 0.4); }
-  70% { box-shadow: 0 12px 28px -8px rgba(94, 139, 176, 0.6), 0 0 0 14px rgba(94, 139, 176, 0); }
-  100% { box-shadow: 0 12px 28px -8px rgba(94, 139, 176, 0.6), 0 0 0 0 rgba(94, 139, 176, 0); }
+  0% { box-shadow: 0 12px 28px -8px rgba(2, 103, 193, 0.6), 0 0 0 0 rgba(2, 103, 193, 0.4); }
+  70% { box-shadow: 0 12px 28px -8px rgba(2, 103, 193, 0.6), 0 0 0 14px rgba(2, 103, 193, 0); }
+  100% { box-shadow: 0 12px 28px -8px rgba(2, 103, 193, 0.6), 0 0 0 0 rgba(2, 103, 193, 0); }
 }
 
 /* Stat number style */
@@ -171,6 +171,79 @@ a:hover .brand-mark-light,
   opacity: 1;
   transform: scale(1.04);
 }
+
+/* Active nav indicator */
+.nav-active {
+  color: var(--color-brand);
+}
+.nav-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--color-brand);
+}
+
+/* Heart-with-line accent (used below section labels) */
+.heart-accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px auto;
+  justify-content: center;
+}
+.heart-accent::before,
+.heart-accent::after {
+  content: '';
+  width: 36px;
+  height: 1.5px;
+  background: var(--color-brand);
+  opacity: 0.45;
+}
+.heart-accent svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-coral);
+}
+
+/* Section label (uppercase brand-color hint above big heading) */
+.kicker {
+  display: inline-block;
+  color: var(--color-brand);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Decorative botanical accents */
+.leaf-decor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+.leaf-decor svg {
+  width: 100%;
+  height: 100%;
+}
+.leaf-decor path,
+.leaf-decor ellipse {
+  fill: #A4B36F;
+}
+.leaf-decor.coral path,
+.leaf-decor.coral ellipse { fill: #E89485; }
+.leaf-decor.yellow path,
+.leaf-decor.yellow ellipse { fill: #F5C84C; }
+
+/* Pulse animation for floating dots */
+@keyframes float-slow-2 {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(-2deg); }
+}
+.float-slow-2 { animation: float-slow-2 7s ease-in-out infinite; }
 
 /* Footer credit treatment */
 .credit-line {

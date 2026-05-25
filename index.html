@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>e_synergo — Κέντρο Ειδικών Θεραπειών | Αχαρναί</title>
   <meta name="description" content="Το e_synergo στηρίζει παιδιά και οικογένειες με Εργοθεραπεία, Λογοθεραπεία, Ειδική Διαπαιδαγώγηση, Ψυχολογική Υποστήριξη και Συμβουλευτική Γονέων. Σωκράτους 130, Αχαρναί." />
-  <meta name="theme-color" content="#5E8BB0" />
+  <meta name="theme-color" content="#0267C1" />
   <link rel="canonical" href="https://e-synergo.gr/" />
 
   <!-- Favicon -->
@@ -36,7 +36,7 @@
     "@type": "MedicalBusiness",
     "name": "e_synergo — ΣυνΕργώ",
     "description": "Κέντρο Ειδικών Θεραπειών για παιδιά και οικογένειες.",
-    "image": "",
+    "image": "https://e-synergo.gr/assets/logo.png",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Σωκράτους 130",
@@ -46,10 +46,9 @@
       "addressCountry": "GR"
     },
     "telephone": "",
-    "url": "",
-    "sameAs": ["https://www.instagram.com/e_synergo/"],
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "21:00" }
+    "url": "https://e-synergo.gr/",
+    "sameAs": [
+      "https://www.instagram.com/e_synergo/"
     ]
   }
   </script>
@@ -58,36 +57,29 @@
 
   <a href="#main" class="skip-link">Παράκαμψη στο κύριο περιεχόμενο</a>
 
-  <!-- ============ HEADER ============ -->
+  <!-- HEADER -->
   <header class="sticky top-0 z-50 bg-cream/85 backdrop-blur-md border-b border-brand-purple/10 no-print">
     <nav class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between" aria-label="Κύρια πλοήγηση">
-      <a href="index.html" class="block group" aria-label="ΣυνΕργώ — Κέντρο Ειδικών Θεραπειών - Αρχική">
+      <a href="index.html" class="block group" aria-label="ΣυνΕργώ - Αρχική">
         <picture>
           <source media="(min-width: 768px)" srcset="assets/header-logo-desktop.webp" />
           <img src="assets/header-logo-mobile.webp" alt="ΣυνΕργώ — Κέντρο Ειδικών Θεραπειών — Βίγλα Ελένη" class="h-12 md:h-14 lg:h-16 w-auto group-hover:scale-105 transition" />
         </picture>
       </a>
-
       <ul class="hidden md:flex items-center gap-7 text-sm font-semibold">
-        <li><a href="index.html" class="hover:text-brand-purple transition">Αρχική</a></li>
+        <li><a href="index.html" class="text-brand-purple">Αρχική</a></li>
         <li><a href="services.html" class="hover:text-brand-purple transition">Υπηρεσίες</a></li>
         <li><a href="about.html" class="hover:text-brand-purple transition">Το Κέντρο</a></li>
         <li><a href="contact.html" class="hover:text-brand-purple transition">Επικοινωνία</a></li>
       </ul>
-
-      <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-brand-purple text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-purple-dark transition shadow-md">
-        Κλείστε ραντεβού
-        <span aria-hidden="true">→</span>
-      </a>
-
+      <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-brand-purple text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-purple-dark transition shadow-md">Κλείστε ραντεβού →</a>
       <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-brand-purple/10" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="mobile-menu">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
     </nav>
-
     <div id="mobile-menu" class="md:hidden bg-cream border-t border-brand-purple/10">
       <ul class="px-5 py-4 space-y-3 font-semibold">
-        <li><a href="index.html" class="block py-2">Αρχική</a></li>
+        <li><a href="index.html" class="block py-2 text-brand-purple">Αρχική</a></li>
         <li><a href="services.html" class="block py-2">Υπηρεσίες</a></li>
         <li><a href="about.html" class="block py-2">Το Κέντρο</a></li>
         <li><a href="contact.html" class="block py-2">Επικοινωνία</a></li>
@@ -106,68 +98,79 @@
 
   <!-- ============ HERO ============ -->
   <section class="relative overflow-hidden">
-    <div class="blob bg-brand-yellow w-[400px] h-[400px] -top-20 -left-20"></div>
-    <div class="blob bg-brand-blue w-[500px] h-[500px] top-40 -right-40"></div>
-    <div class="blob bg-brand-pink w-[300px] h-[300px] bottom-0 left-1/3"></div>
+    <!-- Soft background blobs -->
+    <div class="absolute top-20 left-1/3 w-[450px] h-[420px] rounded-[50%] bg-brand-coral/15 blur-3xl pointer-events-none"></div>
+    <div class="absolute -top-10 right-0 w-[400px] h-[400px] rounded-[50%] bg-brand-yellow/20 blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 -left-20 w-[350px] h-[350px] rounded-[50%] bg-brand-blue/15 blur-3xl pointer-events-none"></div>
 
     <div class="relative max-w-7xl mx-auto px-5 pt-16 pb-24 md:pt-24 md:pb-32 grid md:grid-cols-2 gap-12 items-center">
       <div>
-        <span class="inline-block bg-brand-purple/10 text-brand-purple-dark px-4 py-1.5 rounded-full text-sm font-bold mb-6">✨ Κέντρο Ειδικών Θεραπειών</span>
-        <h1 class="text-6xl md:text-8xl font-extrabold leading-[0.95] mb-7 tracking-tight">
-          Μαζί.<br>
-          Σε <span class="underline-wavy">κάθε βήμα</span>.
+        <h1 class="text-5xl md:text-7xl xl:text-8xl font-extrabold leading-[0.98] mb-7 tracking-tight">
+          <span class="text-brand-purple">Μαζί.</span><br>
+          <span class="text-brand-ink">Σε κάθε βήμα.</span>
         </h1>
-        <p class="text-lg md:text-xl text-brand-muted mb-8 max-w-xl">
-          Στηρίζουμε κάθε παιδί να εξελιχθεί με τον δικό του ρυθμό, με ειδικές θεραπείες, αγάπη και επιστημονική φροντίδα.
+        <p class="text-base md:text-lg text-brand-muted mb-8 max-w-md leading-relaxed">
+          Στηρίζουμε κάθε παιδί να εξελιχθεί με τον δικό του ρυθμό, με αγκαλιά, κατανόηση και εξατομικευμένη φροντίδα.
         </p>
-        <div class="flex flex-wrap gap-4">
-          <a href="contact.html" class="bg-brand-purple text-white px-7 py-4 rounded-full font-bold hover:bg-brand-purple-dark transition shadow-lg">
+        <div class="flex flex-wrap gap-3">
+          <a href="contact.html" class="inline-flex items-center gap-2 bg-brand-purple text-white px-6 py-3.5 rounded-full font-bold hover:bg-brand-purple-dark transition shadow-md">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             Κλείστε ραντεβού
           </a>
-          <a href="services.html" class="bg-white border-2 border-brand-purple/20 text-brand-ink px-7 py-4 rounded-full font-bold hover:border-brand-purple transition">
-            Γνωρίστε τις υπηρεσίες μας →
+          <a href="services.html" class="inline-flex items-center gap-2 bg-white border-2 border-brand-purple/30 text-brand-purple px-6 py-3.5 rounded-full font-bold hover:border-brand-purple hover:bg-brand-purple/5 transition">
+            Γνωρίστε τις υπηρεσίες μας
+            <span aria-hidden="true">→</span>
           </a>
-        </div>
-
-        <div class="mt-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-brand-muted">
-          <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-brand-green"></span> Εξατομικευμένη προσέγγιση</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-brand-blue"></span> Διεπιστημονική ομάδα</div>
         </div>
       </div>
 
       <div class="relative">
-        <div class="float-slow relative aspect-square max-w-lg mx-auto">
-          <!-- Mascot illustration -->
-          <img src="assets/mascot.webp" alt="" aria-hidden="true" class="relative z-10 w-full h-full object-contain" />
-          <!-- Decorative elements -->
-          <svg class="absolute top-8 -left-4 md:left-0 w-20 h-20 text-brand-green/70 opacity-80" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true">
-            <path d="M50 10 Q 30 30 30 55 Q 30 80 50 90 Q 70 80 70 55 Q 70 30 50 10 Z" opacity="0.4"/>
-            <path d="M50 20 Q 38 35 38 55 Q 38 75 50 82" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+        <div class="relative aspect-square max-w-xl mx-auto">
+          <!-- Soft backdrop blobs behind mascot -->
+          <!-- Large soft green/yellow background blob -->
+          <svg class="absolute inset-0 w-full h-full opacity-35 blur-3xl z-0" viewBox="0 0 500 500" aria-hidden="true">
+            <path d="M 120,250 Q 80,150 200,120 Q 320,90 380,180 Q 440,270 380,350 Q 280,410 180,360 Q 80,310 120,250 Z" fill="#E4ECDB" />
           </svg>
-          <svg class="absolute top-1/4 -right-4 md:right-2 w-12 h-12 text-brand-coral" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" opacity="0.85"/>
-          </svg>
-          <span class="absolute bottom-12 -left-6 w-10 h-10 rounded-full bg-brand-yellow/70 blur-sm"></span>
-          <span class="absolute top-4 right-10 w-6 h-6 rounded-full bg-brand-pink/60"></span>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ============ STATS BAR ============ -->
-  <section class="py-10 md:py-14 bg-white border-y border-brand-purple/10">
-    <div class="max-w-5xl mx-auto px-5 grid grid-cols-3 gap-4 md:gap-12 text-center">
-      <div class="reveal">
-        <div class="stat-num text-brand-purple mb-1">5</div>
-        <div class="text-xs md:text-sm text-brand-muted font-bold uppercase tracking-wider">Εξειδικευμένες<br>υπηρεσίες</div>
-      </div>
-      <div class="reveal reveal-delay-1 md:border-l md:border-r border-brand-purple/10">
-        <div class="stat-num text-brand-coral mb-1">2-14</div>
-        <div class="text-xs md:text-sm text-brand-muted font-bold uppercase tracking-wider">Ετών<br>παιδιά</div>
-      </div>
-      <div class="reveal reveal-delay-2">
-        <div class="stat-num text-brand-green mb-1">1:1</div>
-        <div class="text-xs md:text-sm text-brand-muted font-bold uppercase tracking-wider">Εξατομικευμένο<br>πλάνο</div>
+          <!-- Sunburst halo arc centered above mascot head -->
+          <svg class="absolute top-[2%] left-[50%] -translate-x-1/2 w-28 h-28 text-brand-yellow z-0" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true">
+            <!-- Rays -->
+            <line x1="20" y1="55" x2="8" y2="50" />
+            <line x1="32" y1="30" x2="22" y2="18" />
+            <line x1="50" y1="20" x2="50" y2="6" />
+            <line x1="68" y1="30" x2="78" y2="18" />
+            <line x1="80" y1="55" x2="92" y2="50" />
+          </svg>
+
+          <!-- Left foot yellow blob behind mascot legs -->
+          <svg class="absolute bottom-[16%] left-[28%] w-[32%] h-[18%] z-0" viewBox="0 0 150 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M 10 40 C 15 20, 60 15, 100 25 C 130 35, 145 50, 135 65 C 120 75, 80 80, 40 75 C 15 70, 5 60, 10 40 Z" fill="#F5C84C" opacity="0.45" />
+          </svg>
+          <!-- Right foot green blob behind mascot legs -->
+          <svg class="absolute bottom-[12%] right-[22%] w-[28%] h-[18%] z-0" viewBox="0 0 150 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M 20 45 C 15 25, 55 15, 95 20 C 130 25, 140 45, 130 60 C 115 75, 75 75, 45 70 C 25 65, 25 55, 20 45 Z" fill="#A4B36F" opacity="0.45" />
+          </svg>
+
+          <!-- Mascot illustration -->
+          <img src="assets/mascot.webp" alt="" aria-hidden="true" class="float-slow relative z-10 w-full h-full object-contain" />
+
+          <!-- Pink heart on left (hand-drawn style) -->
+          <svg class="absolute top-[44%] left-[4%] w-16 h-16 text-brand-pink z-20" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M 50,30 C 40,10 15,15 15,40 C 15,65 45,80 50,85 C 55,80 85,65 85,40 C 85,15 60,10 50,30 Z" transform="rotate(-12 50 50)"/>
+          </svg>
+
+          <!-- Leaf branch (right side) -->
+          <div class="leaf-decor float-slow-2" style="top: 26%; right: 0%; width: 140px; height: 280px; z-index: 5;">
+            <svg viewBox="0 0 100 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M50 5 C 55 70, 45 140, 55 215" stroke="#A4B36F" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.85"/>
+              <ellipse cx="30" cy="35" rx="24" ry="11" transform="rotate(-30 30 35)" opacity="0.85"/>
+              <ellipse cx="72" cy="75" rx="24" ry="11" transform="rotate(30 72 75)" opacity="0.75"/>
+              <ellipse cx="26" cy="120" rx="26" ry="12" transform="rotate(-35 26 120)" opacity="0.85"/>
+              <ellipse cx="73" cy="165" rx="24" ry="11" transform="rotate(28 73 165)" opacity="0.7"/>
+              <ellipse cx="32" cy="200" rx="20" ry="9" transform="rotate(-25 32 200)" opacity="0.75"/>
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -176,215 +179,174 @@
   <section class="relative py-20 md:py-28" id="services">
     <div class="max-w-7xl mx-auto px-5">
       <div class="text-center max-w-2xl mx-auto mb-14 reveal">
-        <span class="inline-block text-brand-purple font-bold mb-3 text-sm tracking-wider uppercase">Υπηρεσίες</span>
-        <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Ολοκληρωμένη υποστήριξη <br class="hidden md:block">για κάθε παιδί</h2>
-        <p class="text-lg text-brand-muted">Μια ολοκληρωμένη δέσμη θεραπειών που λειτουργούν συνεργατικά γύρω από κάθε παιδί.</p>
+        <span class="kicker mb-3">Υπηρεσίες</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-2 text-brand-purple leading-tight">Ολοκληρωμένη υποστήριξη <br class="hidden md:block">για κάθε παιδί</h2>
+        <span class="heart-accent" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </span>
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 md:gap-5">
-        <!-- Εργοθεραπεία -->
-        <a href="services.html#ergotherapy" class="service-card reveal rounded-3xl p-6 xl:p-5" style="background-color: #E3EEF6">
-          <div class="w-14 h-14 xl:w-12 xl:h-12 rounded-2xl bg-white/60 flex items-center justify-center mb-4">
+        <!-- Εργοθεραπεία (blue) -->
+        <a href="services.html#ergotherapy" class="service-card reveal rounded-3xl p-6 xl:p-5 flex flex-col" style="background-color: #E3EEF6">
+          <div class="w-14 h-14 xl:w-12 xl:h-12 rounded-2xl bg-white/70 flex items-center justify-center mb-4">
             <img src="assets/icon-occupational.svg" alt="" class="w-9 h-9 xl:w-8 xl:h-8" aria-hidden="true" />
           </div>
-          <h3 class="font-bold text-xl mb-2">Εργοθεραπεία</h3>
-          <p class="text-brand-ink/75 text-sm leading-relaxed mb-4">Ανάπτυξη κινητικών δεξιοτήτων, αισθητηριακής επεξεργασίας και αυτονομίας στην καθημερινότητα.</p>
-          <span class="inline-block text-brand-purple font-semibold text-sm">Μάθετε περισσότερα →</span>
+          <h3 class="font-bold text-lg mb-2" style="color:#0267C1">Εργοθεραπεία</h3>
+          <p class="text-brand-ink/70 text-sm leading-relaxed mb-5 flex-1">Ενισχύουμε δεξιότητες που βοηθούν το παιδί στην καθημερινότητα και στην αυτονομία.</p>
+          <span class="w-10 h-10 rounded-full bg-white/70 flex items-center justify-center hover:bg-white transition" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0267C1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
         </a>
 
-        <!-- Λογοθεραπεία -->
-        <a href="services.html#logotherapy" class="service-card reveal reveal-delay-1 rounded-3xl p-6 xl:p-5" style="background-color: #E4ECDB">
-          <div class="w-14 h-14 xl:w-12 xl:h-12 rounded-2xl bg-white/60 flex items-center justify-center mb-4">
+        <!-- Λογοθεραπεία (green) -->
+        <a href="services.html#logotherapy" class="service-card reveal reveal-delay-1 rounded-3xl p-6 xl:p-5 flex flex-col" style="background-color: #E4ECDB">
+          <div class="w-14 h-14 xl:w-12 xl:h-12 rounded-2xl bg-white/70 flex items-center justify-center mb-4">
             <img src="assets/icon-speech.svg" alt="" class="w-9 h-9 xl:w-8 xl:h-8" aria-hidden="true" />
           </div>
-          <h3 class="font-bold text-xl mb-2">Λογοθεραπεία</h3>
-          <p class="text-brand-ink/75 text-sm leading-relaxed mb-4">Στήριξη στην ομιλία, τη γλώσσα, την επικοινωνία και τη σίτιση από τα πρώτα χρόνια ζωής.</p>
-          <span class="inline-block text-brand-purple font-semibold text-sm">Μάθετε περισσότερα →</span>
+          <h3 class="font-bold text-lg mb-2" style="color:#7E8F4F">Λογοθεραπεία</h3>
+          <p class="text-brand-ink/70 text-sm leading-relaxed mb-5 flex-1">Υποστηρίζουμε την επικοινωνία, τον λόγο και την έκφραση με σύγχρονες μεθόδους.</p>
+          <span class="w-10 h-10 rounded-full bg-white/70 flex items-center justify-center hover:bg-white transition" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7E8F4F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
         </a>
 
-        <!-- Ειδική Διαπαιδαγώγηση -->
-        <a href="services.html#special-education" class="service-card reveal reveal-delay-2 rounded-3xl p-6 xl:p-5" style="background-color: #FCEDC9">
+        <!-- Ειδικό μαθησιακό πρόγραμμα (yellow) -->
+        <a href="services.html#special-education" class="service-card reveal reveal-delay-2 rounded-3xl p-6 xl:p-5 flex flex-col" style="background-color: #FCEDC9">
           <div class="w-14 h-14 xl:w-12 xl:h-12 rounded-2xl bg-white/70 flex items-center justify-center mb-4">
             <img src="assets/icon-learning.svg" alt="" class="w-9 h-9 xl:w-8 xl:h-8" aria-hidden="true" />
           </div>
-          <h3 class="font-bold text-xl mb-2">Ειδικό μαθησιακό</h3>
-          <p class="text-brand-ink/75 text-sm leading-relaxed mb-4">Εξατομικευμένη μαθησιακή υποστήριξη για παιδιά με δυσλεξία, ΔΕΠΥ ή άλλες μαθησιακές δυσκολίες.</p>
-          <span class="inline-block text-brand-purple font-semibold text-sm">Μάθετε περισσότερα →</span>
+          <h3 class="font-bold text-lg mb-2" style="color:#D9A12E">Ειδικό μαθησιακό πρόγραμμα</h3>
+          <p class="text-brand-ink/70 text-sm leading-relaxed mb-5 flex-1">Βοηθάμε το παιδί να ανακαλύψει τον δικό του τρόπο μάθησης και να αποκτήσει αυτοπεποίθηση.</p>
+          <span class="w-10 h-10 rounded-full bg-white/70 flex items-center justify-center hover:bg-white transition" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9A12E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
         </a>
 
-        <!-- Ψυχολογική Υποστήριξη -->
-        <a href="services.html#psychology" class="service-card reveal rounded-3xl p-6 xl:p-5" style="background-color: #EAE2F2">
+        <!-- Ψυχολογική υποστήριξη (lavender) -->
+        <a href="services.html#psychology" class="service-card reveal rounded-3xl p-6 xl:p-5 flex flex-col" style="background-color: #EAE2F2">
           <div class="w-14 h-14 xl:w-12 xl:h-12 rounded-2xl bg-white/70 flex items-center justify-center mb-4">
             <img src="assets/icon-psychology.svg" alt="" class="w-9 h-9 xl:w-8 xl:h-8" aria-hidden="true" />
           </div>
-          <h3 class="font-bold text-xl mb-2">Ψυχολογική υποστήριξη</h3>
-          <p class="text-brand-ink/75 text-sm leading-relaxed mb-4">Συναισθηματική και ψυχική στήριξη για παιδιά, εφήβους και την οικογένειά τους.</p>
-          <span class="inline-block text-brand-purple font-semibold text-sm">Μάθετε περισσότερα →</span>
+          <h3 class="font-bold text-lg mb-2" style="color:#8E73B8">Ψυχολογική υποστήριξη</h3>
+          <p class="text-brand-ink/70 text-sm leading-relaxed mb-5 flex-1">Στηρίζουμε τη συναισθηματική ανάπτυξη και την ψυχική ευεξία του παιδιού και της οικογένειας.</p>
+          <span class="w-10 h-10 rounded-full bg-white/70 flex items-center justify-center hover:bg-white transition" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8E73B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
         </a>
 
-        <!-- Συμβουλευτική Γονέων -->
-        <a href="services.html#parent-counseling" class="service-card reveal reveal-delay-1 rounded-3xl p-6 xl:p-5" style="background-color: #F8DDE2">
+        <!-- Συμβουλευτική γονέων (pink) -->
+        <a href="services.html#parent-counseling" class="service-card reveal reveal-delay-1 rounded-3xl p-6 xl:p-5 flex flex-col" style="background-color: #F8DDE2">
           <div class="w-14 h-14 xl:w-12 xl:h-12 rounded-2xl bg-white/70 flex items-center justify-center mb-4">
             <img src="assets/icon-parents.svg" alt="" class="w-9 h-9 xl:w-8 xl:h-8" aria-hidden="true" />
           </div>
-          <h3 class="font-bold text-xl mb-2">Συμβουλευτική γονέων</h3>
-          <p class="text-brand-ink/75 text-sm leading-relaxed mb-4">Καθοδήγηση και εργαλεία για να στηρίξετε το παιδί σας με σιγουριά και ηρεμία.</p>
-          <span class="inline-block text-brand-purple font-semibold text-sm">Μάθετε περισσότερα →</span>
+          <h3 class="font-bold text-lg mb-2" style="color:#C76B82">Συμβουλευτική γονέων</h3>
+          <p class="text-brand-ink/70 text-sm leading-relaxed mb-5 flex-1">Είμαστε δίπλα στους γονείς, προσφέροντας καθοδήγηση και πρακτικές λύσεις στην καθημερινότητα.</p>
+          <span class="w-10 h-10 rounded-full bg-white/70 flex items-center justify-center hover:bg-white transition" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C76B82" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
         </a>
 
-        <!-- Αξιολόγηση -->
-        <a href="services.html#assessment" class="service-card reveal reveal-delay-2 rounded-3xl p-6 xl:p-5" style="background-color: #F7DDD3">
+        <!-- Αξιολόγηση & Εκτίμηση (coral) -->
+        <a href="services.html#assessment" class="service-card reveal reveal-delay-2 rounded-3xl p-6 xl:p-5 flex flex-col" style="background-color: #F7DDD3">
           <div class="w-14 h-14 xl:w-12 xl:h-12 rounded-2xl bg-white/70 flex items-center justify-center mb-4">
             <img src="assets/icon-assessment.svg" alt="" class="w-9 h-9 xl:w-8 xl:h-8" aria-hidden="true" />
           </div>
-          <h3 class="font-bold text-xl mb-2">Αξιολόγηση & Εκτίμηση</h3>
-          <p class="text-brand-ink/75 text-sm leading-relaxed mb-4">Διεπιστημονική αξιολόγηση που οδηγεί σε εξατομικευμένο πλάνο για το παιδί σας.</p>
-          <span class="inline-block text-brand-purple font-semibold text-sm">Μάθετε περισσότερα →</span>
+          <h3 class="font-bold text-lg mb-2" style="color:#D27764">Αξιολόγηση & Εκτίμηση</h3>
+          <p class="text-brand-ink/70 text-sm leading-relaxed mb-5 flex-1">Ολοκληρωμένη αξιολόγηση για την κατανόηση των αναγκών και τον σχεδιασμό του κατάλληλου πλάνου.</p>
+          <span class="w-10 h-10 rounded-full bg-white/70 flex items-center justify-center hover:bg-white transition" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D27764" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
         </a>
       </div>
     </div>
   </section>
 
   <!-- ============ ABOUT TEASER ============ -->
-  <section class="py-20 md:py-28 bg-white">
-    <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-14 items-center">
+  <section class="relative py-20 md:py-28 bg-white overflow-hidden">
+    <!-- Right side leaf decoration -->
+    <div class="leaf-decor hidden md:block" style="top: 60%; right: -10px; width: 130px; height: 280px; transform: translateY(-50%) rotate(18deg);">
+      <svg viewBox="0 0 100 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M50 5 C 55 65, 45 130, 55 235" stroke="#A4B36F" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.55"/>
+        <ellipse cx="28" cy="35" rx="24" ry="10" transform="rotate(-30 28 35)" opacity="0.6"/>
+        <ellipse cx="72" cy="70" rx="24" ry="10" transform="rotate(30 72 70)" opacity="0.5"/>
+        <ellipse cx="25" cy="115" rx="26" ry="11" transform="rotate(-35 25 115)" opacity="0.6"/>
+        <ellipse cx="75" cy="160" rx="24" ry="10" transform="rotate(28 75 160)" opacity="0.5"/>
+        <ellipse cx="28" cy="205" rx="22" ry="9" transform="rotate(-25 28 205)" opacity="0.55"/>
+      </svg>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-14 items-center">
+      <!-- Photo column: stylized interior placeholder with organic blob frame -->
       <div class="relative">
-        <div class="aspect-[4/5] max-w-md mx-auto rounded-[2.5rem] overflow-hidden bg-gradient-to-br from-brand-yellow/40 via-brand-pink/30 to-brand-purple/30 flex items-center justify-center">
-          <!-- TODO: αντικαταστήστε με πραγματική φωτογραφία χώρου -->
-          <span class="text-brand-muted text-sm font-semibold">[ Φωτογραφία χώρου ]</span>
-        </div>
-        <div class="absolute -bottom-6 -right-6 bg-brand-yellow rounded-2xl p-5 shadow-xl hidden md:block">
-          <div class="text-3xl font-extrabold">+5</div>
-          <div class="text-sm font-semibold">υπηρεσίες<br>υπό μία στέγη</div>
+        <!-- Soft coral blob (top-left of photo) -->
+        <svg class="absolute -top-8 -left-6 w-44 h-44 opacity-50" viewBox="0 0 200 200" aria-hidden="true">
+          <path d="M 100 20 Q 170 30, 175 100 Q 180 165, 110 175 Q 50 175, 35 110 Q 30 50, 100 20 Z" fill="#F2D2C8"/>
+        </svg>
+        <!-- Soft yellow blob (bottom-right of photo) -->
+        <svg class="absolute -bottom-10 -right-8 w-48 h-48 opacity-40" viewBox="0 0 200 200" aria-hidden="true">
+          <path d="M 100 15 Q 180 35, 180 110 Q 170 175, 100 180 Q 30 170, 25 105 Q 30 35, 100 15 Z" fill="#F5E4B0"/>
+        </svg>
+
+        <!-- Photo placeholder with organic rounded shape -->
+        <div class="relative max-w-md mx-auto animate-float" style="aspect-ratio: 5/6;">
+          <!-- Organic rounded outer shape -->
+          <div class="absolute inset-0 overflow-hidden" style="border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;">
+            <img src="assets/room.png" alt="Ο χώρος του κέντρου μας" class="w-full h-full object-cover" />
+          </div>
         </div>
       </div>
 
+      <!-- Right text column -->
       <div>
-        <span class="inline-block text-brand-purple font-bold mb-3 text-sm tracking-wider uppercase">Το κέντρο μας</span>
-        <h2 class="text-3xl md:text-5xl font-extrabold mb-5 leading-tight">Από την υποστήριξη <br class="hidden md:block">στην <span class="underline-wavy">αυτονομία</span>.</h2>
-        <p class="text-lg text-brand-muted mb-5">
-          Το <strong>e_synergo</strong> δημιουργήθηκε με όραμα τη συνεργασία επαγγελματιών διαφορετικών ειδικοτήτων γύρω από το κάθε παιδί. Πιστεύουμε ότι η πραγματική πρόοδος έρχεται όταν η θεραπεία συναντά την οικογένεια, το σχολείο και την καθημερινότητα.
+        <span class="kicker mb-3">Το κέντρο μας</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-2 leading-tight text-brand-purple">Από την υποστήριξη <br class="hidden md:block">στην αυτονομία.</h2>
+        <span class="heart-accent !justify-start !mx-0" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </span>
+        <p class="text-base text-brand-muted mb-5 mt-5 leading-relaxed">
+          Στο <strong class="text-brand-ink">ΣΥΝΕΡΓΩ</strong> δημιουργούμε ένα ασφαλές και ζεστό περιβάλλον, όπου κάθε παιδί νιώθει αποδεκτό, ενθαρρύνεται και στηρίζεται να εξελιχθεί με τον δικό του ρυθμό.
         </p>
-        <ul class="space-y-3 mb-8 text-brand-ink">
-          <li class="flex gap-3"><span class="text-brand-green text-xl">✓</span> Εξατομικευμένο πλάνο για κάθε παιδί</li>
-          <li class="flex gap-3"><span class="text-brand-green text-xl">✓</span> Στενή συνεργασία με τους γονείς</li>
-          <li class="flex gap-3"><span class="text-brand-green text-xl">✓</span> Σύγχρονος, ασφαλής & παιδικός χώρος</li>
-          <li class="flex gap-3"><span class="text-brand-green text-xl">✓</span> Συνεχιζόμενη εκπαίδευση της ομάδας</li>
-        </ul>
-        <a href="about.html" class="inline-flex items-center gap-2 bg-brand-purple text-white px-6 py-3 rounded-full font-bold hover:bg-brand-purple-dark transition">
-          Γνωρίστε μας →
+        <p class="text-base text-brand-muted mb-7 leading-relaxed">
+          Η επιστημονική μας ομάδα συνεργάζεται με την οικογένεια σε κάθε στάδιο, με στόχο την ενδυνάμωση του παιδιού και την ποιότητα ζωής όλης της οικογένειας.
+        </p>
+        <a href="about.html" class="inline-flex items-center gap-2 bg-brand-purple text-white px-6 py-3.5 rounded-full font-bold hover:bg-brand-purple-dark transition shadow-md">
+          Μάθετε περισσότερα για εμάς
+          <span aria-hidden="true">→</span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ============ PROCESS ============ -->
-  <section class="py-20 md:py-28">
-    <div class="max-w-7xl mx-auto px-5">
-      <div class="text-center max-w-2xl mx-auto mb-14 reveal">
-        <span class="inline-block text-brand-purple font-bold mb-3">ΠΩΣ ΞΕΚΙΝΑΜΕ</span>
-        <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Η διαδικασία σε 4 βήματα</h2>
-        <p class="text-lg text-brand-muted">Διαφανής και απλή — από την πρώτη επαφή μέχρι το εξατομικευμένο πλάνο.</p>
-      </div>
-
-      <div class="grid md:grid-cols-4 gap-6">
-        <div class="reveal bg-white rounded-3xl p-6 border border-brand-purple/5 relative">
-          <div class="w-12 h-12 rounded-full bg-brand-yellow flex items-center justify-center font-extrabold text-xl mb-4">1</div>
-          <h3 class="font-bold text-lg mb-2">Πρώτη επικοινωνία</h3>
-          <p class="text-brand-muted text-sm">Μας τηλεφωνείτε ή συμπληρώνετε τη φόρμα. Συζητάμε σύντομα τις ανάγκες σας.</p>
-        </div>
-        <div class="reveal reveal-delay-1 bg-white rounded-3xl p-6 border border-brand-purple/5">
-          <div class="w-12 h-12 rounded-full bg-brand-green flex items-center justify-center font-extrabold text-xl mb-4">2</div>
-          <h3 class="font-bold text-lg mb-2">Ραντεβού γνωριμίας</h3>
-          <p class="text-brand-muted text-sm">Συνάντηση με τους γονείς και το παιδί για να γνωριστούμε σε ένα οικείο περιβάλλον.</p>
-        </div>
-        <div class="reveal reveal-delay-2 bg-white rounded-3xl p-6 border border-brand-purple/5">
-          <div class="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center font-extrabold text-xl mb-4">3</div>
-          <h3 class="font-bold text-lg mb-2">Αξιολόγηση</h3>
-          <p class="text-brand-muted text-sm">Διεπιστημονική εκτίμηση με τα κατάλληλα εργαλεία ανά ηλικία και ανάγκη.</p>
-        </div>
-        <div class="reveal reveal-delay-3 bg-white rounded-3xl p-6 border border-brand-purple/5">
-          <div class="w-12 h-12 rounded-full bg-brand-pink flex items-center justify-center font-extrabold text-xl mb-4">4</div>
-          <h3 class="font-bold text-lg mb-2">Πλάνο & Θεραπεία</h3>
-          <p class="text-brand-muted text-sm">Σχεδιάζουμε εξατομικευμένο πλάνο και ξεκινάμε, με τακτική ενημέρωση των γονέων.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ TESTIMONIALS ============ -->
-  <section class="py-20 md:py-28 bg-white">
-    <div class="max-w-7xl mx-auto px-5">
-      <div class="text-center max-w-2xl mx-auto mb-14 reveal">
-        <span class="inline-block text-brand-purple font-bold mb-3">ΤΙ ΛΕΝΕ ΟΙ ΓΟΝΕΙΣ</span>
-        <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Ιστορίες που μας κάνουν περήφανους</h2>
-        <p class="text-lg text-brand-muted">Πραγματικές εμπειρίες από οικογένειες που μας εμπιστεύτηκαν.</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <article class="reveal bg-cream rounded-3xl p-7 border border-brand-purple/5 relative">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="text-brand-yellow mb-3 -ml-1" aria-hidden="true"><path d="M9.13 9H6c0-3.31 2.69-6 6-6v2c-2.21 0-4 1.79-4 4h1.13c1.04 0 1.87.84 1.87 1.87v3.26c0 1.04-.84 1.87-1.87 1.87H5.87C4.84 16 4 15.16 4 14.13v-3.26C4 9.84 4.84 9 5.87 9h3.26zm10 0H16c0-3.31 2.69-6 6-6v2c-2.21 0-4 1.79-4 4h1.13c1.04 0 1.87.84 1.87 1.87v3.26c0 1.04-.84 1.87-1.87 1.87h-3.26C14.84 16 14 15.16 14 14.13v-3.26C14 9.84 14.84 9 15.87 9h3.26z"/></svg>
-          <p class="text-brand-ink mb-6 leading-relaxed">Από την πρώτη στιγμή νιώσαμε ότι έχουμε βρει το σωστό μέρος. Η ομάδα του e_synergo έδωσε στον γιο μας τα εργαλεία να εκφραστεί — και σε εμάς την ηρεμία να τον στηρίξουμε.</p>
-          <div class="flex items-center gap-3 pt-5 border-t border-brand-purple/10">
-            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-brand-coral to-brand-yellow flex items-center justify-center font-bold text-white">ΜΚ</div>
-            <div>
-              <div class="font-bold text-sm">Μαρία Κ.</div>
-              <div class="text-xs text-brand-muted">Λογοθεραπεία · 6 ετών</div>
-            </div>
-          </div>
-          <span class="absolute top-5 right-5 text-xs text-brand-muted/60">[ placeholder ]</span>
-        </article>
-
-        <article class="reveal reveal-delay-1 bg-cream rounded-3xl p-7 border border-brand-purple/5 relative">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="text-brand-coral mb-3 -ml-1" aria-hidden="true"><path d="M9.13 9H6c0-3.31 2.69-6 6-6v2c-2.21 0-4 1.79-4 4h1.13c1.04 0 1.87.84 1.87 1.87v3.26c0 1.04-.84 1.87-1.87 1.87H5.87C4.84 16 4 15.16 4 14.13v-3.26C4 9.84 4.84 9 5.87 9h3.26zm10 0H16c0-3.31 2.69-6 6-6v2c-2.21 0-4 1.79-4 4h1.13c1.04 0 1.87.84 1.87 1.87v3.26c0 1.04-.84 1.87-1.87 1.87h-3.26C14.84 16 14 15.16 14 14.13v-3.26C14 9.84 14.84 9 15.87 9h3.26z"/></svg>
-          <p class="text-brand-ink mb-6 leading-relaxed">Η διαφορά στο παιδί μας ήταν εμφανής μέσα σε λίγους μήνες. Αλλά αυτό που ξεχωρίζει είναι η συνεχής επικοινωνία μαζί μας — ποτέ δεν νιώσαμε μόνοι σε αυτή τη διαδρομή.</p>
-          <div class="flex items-center gap-3 pt-5 border-t border-brand-purple/10">
-            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-brand-lavender to-brand-pink flex items-center justify-center font-bold text-white">ΔΠ</div>
-            <div>
-              <div class="font-bold text-sm">Δημήτρης Π.</div>
-              <div class="text-xs text-brand-muted">Εργοθεραπεία · 4 ετών</div>
-            </div>
-          </div>
-          <span class="absolute top-5 right-5 text-xs text-brand-muted/60">[ placeholder ]</span>
-        </article>
-
-        <article class="reveal reveal-delay-2 bg-cream rounded-3xl p-7 border border-brand-purple/5 relative">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="text-brand-green mb-3 -ml-1" aria-hidden="true"><path d="M9.13 9H6c0-3.31 2.69-6 6-6v2c-2.21 0-4 1.79-4 4h1.13c1.04 0 1.87.84 1.87 1.87v3.26c0 1.04-.84 1.87-1.87 1.87H5.87C4.84 16 4 15.16 4 14.13v-3.26C4 9.84 4.84 9 5.87 9h3.26zm10 0H16c0-3.31 2.69-6 6-6v2c-2.21 0-4 1.79-4 4h1.13c1.04 0 1.87.84 1.87 1.87v3.26c0 1.04-.84 1.87-1.87 1.87h-3.26C14.84 16 14 15.16 14 14.13v-3.26C14 9.84 14.84 9 15.87 9h3.26z"/></svg>
-          <p class="text-brand-ink mb-6 leading-relaxed">Η συμβουλευτική γονέων μας έδωσε εργαλεία που χρησιμοποιούμε καθημερινά. Ένιωσα ότι κάποιος επιτέλους κατάλαβε τι περνούσαμε — χωρίς κρίση, με πρακτικές λύσεις.</p>
-          <div class="flex items-center gap-3 pt-5 border-t border-brand-purple/10">
-            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-brand-blue to-brand-green flex items-center justify-center font-bold text-white">ΑΛ</div>
-            <div>
-              <div class="font-bold text-sm">Άννα Λ.</div>
-              <div class="text-xs text-brand-muted">Συμβουλευτική Γονέων</div>
-            </div>
-          </div>
-          <span class="absolute top-5 right-5 text-xs text-brand-muted/60">[ placeholder ]</span>
-        </article>
-      </div>
-
-      <p class="text-center text-sm text-brand-muted mt-8 italic">Οι μαρτυρίες δημοσιεύονται με τη συναίνεση των γονέων. Τα ονόματα είναι πραγματικά ή ψευδώνυμα ανάλογα με την επιθυμία τους.</p>
-    </div>
-  </section>
-
   <!-- ============ CTA BANNER ============ -->
-  <section class="py-16 md:py-20">
-    <div class="max-w-6xl mx-auto px-5">
-      <div class="relative overflow-hidden bg-gradient-to-br from-brand-yellow/25 via-brand-coral/15 to-brand-lavender/20 rounded-[2.5rem] p-8 md:p-14">
-        <div class="grid md:grid-cols-2 gap-8 items-center relative">
+  <section class="py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="relative overflow-hidden rounded-[2rem] p-8 md:p-12" style="background-color: #E8F0F7;">
+        <!-- Leaf decoration top-left -->
+        <div class="leaf-decor hidden md:block" style="top: -15px; left: 35%; width: 70px; height: 130px; transform: rotate(15deg); opacity: 0.45;">
+          <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M50 5 C 52 60, 48 120, 52 195" stroke="#A4B36F" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <ellipse cx="28" cy="45" rx="18" ry="7" transform="rotate(-30 28 45)"/>
+            <ellipse cx="72" cy="90" rx="18" ry="7" transform="rotate(30 72 90)"/>
+            <ellipse cx="30" cy="135" rx="16" ry="6" transform="rotate(-25 30 135)"/>
+          </svg>
+        </div>
+        <!-- Heart accent right side -->
+        <svg class="absolute top-8 right-8 w-10 h-10 text-brand-coral/70 hidden md:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+
+        <div class="grid md:grid-cols-2 gap-6 items-center relative">
           <div class="reveal">
-            <span class="inline-block text-brand-purple font-bold mb-3 text-sm tracking-wider uppercase">Ξεκινήστε σήμερα</span>
-            <h2 class="text-3xl md:text-5xl font-extrabold mb-5 leading-tight">Κάντε το <span class="underline-wavy">πρώτο βήμα</span> μαζί μας.</h2>
-            <p class="text-lg text-brand-muted mb-7 max-w-md">Κάθε παιδί είναι μοναδικό. Επικοινωνήστε μαζί μας για ένα δωρεάν ραντεβού γνωριμίας — χωρίς δεσμεύσεις.</p>
-            <div class="flex flex-wrap gap-3">
-              <a href="contact.html" class="bg-brand-purple text-white px-7 py-4 rounded-full font-bold hover:bg-brand-purple-dark transition shadow-lg">Κλείστε ραντεβού γνωριμίας</a>
-              <a href="tel:" class="inline-flex items-center gap-2 bg-white text-brand-ink px-6 py-4 rounded-full font-bold hover:shadow-md transition">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                Καλέστε μας
-              </a>
-            </div>
+            <h2 class="text-2xl md:text-4xl font-extrabold mb-3 leading-tight text-brand-purple">Κάντε το πρώτο βήμα μαζί μας.</h2>
+            <p class="text-base text-brand-muted mb-7">Είμαστε εδώ για να στηρίξουμε εσάς και το παιδί σας.</p>
+            <a href="contact.html" class="inline-flex items-center gap-2 bg-brand-purple text-white px-6 py-3.5 rounded-full font-bold hover:bg-brand-purple-dark transition shadow-md">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Κλείστε ραντεβού γνωριμίας
+            </a>
           </div>
-          <div class="reveal reveal-delay-1">
-            <img src="assets/family.webp" alt="Οικογένεια που κρατιέται από τα χέρια" class="w-full max-w-md mx-auto" loading="lazy" />
+          <div class="reveal reveal-delay-1 flex justify-center md:justify-end">
+            <img src="assets/family.webp" alt="Οικογένεια που κρατιέται από τα χέρια" class="w-full max-w-xs md:max-w-sm" loading="lazy" />
           </div>
         </div>
       </div>
@@ -394,32 +356,16 @@
   </main>
 
   <!-- Sticky mobile call FAB -->
-  <a href="tel:" class="mobile-call-fab no-print" aria-label="Καλέστε μας τώρα">
+  <a href="tel:+302102403368" class="mobile-call-fab no-print" aria-label="Καλέστε μας τώρα">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
   </a>
-
-  <!-- ============ FOLLOW US ============ -->
-  <section class="py-12 md:py-16 bg-white">
-    <div class="max-w-5xl mx-auto px-5">
-      <div class="bg-gradient-to-br from-brand-coral/20 via-brand-yellow/30 to-brand-lavender/20 rounded-[2rem] p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
-        <div class="text-center md:text-left">
-          <h3 class="font-extrabold text-2xl md:text-3xl mb-2">Ακολουθήστε μας στο Instagram</h3>
-          <p class="text-brand-muted">Δείτε στιγμές από τον χώρο μας, συμβουλές για γονείς και νέα του κέντρου.</p>
-        </div>
-        <a href="https://www.instagram.com/e_synergo/" target="_blank" rel="noopener" class="inline-flex items-center gap-3 bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 text-white px-6 py-4 rounded-full font-bold hover:scale-105 transition shadow-lg whitespace-nowrap">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.2-.1 1.6-.1 4.8-.1zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1 0-1.7.2-2.1.3-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.1.4-.3 1-.3 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c0 1.1.2 1.7.3 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.1 1 .3 2.1.3 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1 0 1.7-.2 2.1-.3.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.1-.4.3-1 .3-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c0-1.1-.2-1.7-.3-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.1-1-.3-2.1-.3-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 8.1a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4zm6.3-8.3a1.1 1.1 0 1 1-2.3 0 1.1 1.1 0 0 1 2.3 0z"/></svg>
-          @e_synergo
-        </a>
-      </div>
-    </div>
-  </section>
 
   <!-- ============ FOOTER ============ -->
   <footer class="bg-brand-ink text-white/85 pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-5">
       <div class="grid md:grid-cols-12 gap-8 mb-10">
         <!-- Logo + tagline + social -->
-        <div class="md:col-span-4">
+        <div class="md:col-span-3">
           <div class="bg-white/95 inline-block rounded-2xl p-3 mb-5">
             <img src="assets/footer-logo.webp" alt="ΣυνΕργώ — Κέντρο Ειδικών Θεραπειών — Βίγλα Ελένη" class="h-20 w-auto" />
           </div>
@@ -459,14 +405,30 @@
         </div>
 
         <!-- Επικοινωνία -->
-        <div class="md:col-span-3">
+        <div class="md:col-span-2">
           <h4 class="font-bold text-white mb-4 text-sm uppercase tracking-wider">Επικοινωνία</h4>
           <ul class="space-y-2.5 text-sm">
-            <li class="flex gap-2"><span aria-hidden="true">📍</span> Σωκράτους 130<br>Αχαρναί</li>
-            <li class="flex gap-2"><span aria-hidden="true">📞</span> <a href="tel:" class="hover:text-brand-yellow">[ Τηλέφωνο ]</a></li>
-            <li class="flex gap-2"><span aria-hidden="true">✉️</span> <a href="mailto:vigla@e-synergo.gr" class="hover:text-brand-yellow break-all">vigla@e-synergo.gr</a></li>
+            <li class="flex gap-2"><span aria-hidden="true">📍</span> <span>Σωκράτους 130<br>Αχαρναί</span></li>
+            <li class="flex gap-2"><span aria-hidden="true">📞</span> <a href="tel:+302102403368" class="hover:text-brand-yellow">210 2403368</a></li>
+            <li class="flex gap-2"><span aria-hidden="true">✉️</span> <a href="mailto:vigla@e-synergo.gr" class="hover:text-brand-yellow break-all text-xs">vigla@e-synergo.gr</a></li>
             <li class="flex gap-2"><span aria-hidden="true">🕐</span> Δευ-Παρ 09:00-21:00</li>
           </ul>
+        </div>
+
+        <!-- Map preview -->
+        <div class="md:col-span-2">
+          <h4 class="font-bold text-white mb-4 text-sm uppercase tracking-wider">Βρείτε μας</h4>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Σωκράτους+130,+Αχαρναί" target="_blank" rel="noopener" class="block rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:scale-[1.02] transition" aria-label="Άνοιγμα στο Google Maps">
+            <iframe
+              src="https://www.google.com/maps?q=%CE%A3%CF%89%CE%BA%CF%81%CE%AC%CF%84%CE%BF%CF%85%CF%82%20130%2C%20%CE%91%CF%87%CE%B1%CF%81%CE%BD%CE%B1%CE%AF&output=embed"
+              width="100%"
+              height="170"
+              style="border:0; filter: opacity(0.92) grayscale(0.15); pointer-events: none;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Σωκράτους 130, Αχαρναί"
+              aria-hidden="true"></iframe>
+          </a>
         </div>
       </div>
 

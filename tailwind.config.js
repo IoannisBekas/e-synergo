@@ -6,8 +6,8 @@ module.exports = {
       colors: {
         cream: '#FFFDF8',
         brand: {
-          purple: '#5E8BB0',
-          'purple-dark': '#466F92',
+          purple: '#0267C1',
+          'purple-dark': '#01529B',
           coral: '#E89485',
           yellow: '#F5C84C',
           lavender: '#B69BD8',

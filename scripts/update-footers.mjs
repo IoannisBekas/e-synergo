@@ -1,12 +1,11 @@
-// One-off: replace the old footer block in services/about/contact pages
-// with the new restructured footer (matching the index.html footer).
+// Sync the new footer (with map preview) to all main pages
 import { readFile, writeFile } from 'node:fs/promises';
 
 const NEW_FOOTER = `  <footer class="bg-brand-ink text-white/85 pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-5">
       <div class="grid md:grid-cols-12 gap-8 mb-10">
         <!-- Logo + tagline + social -->
-        <div class="md:col-span-4">
+        <div class="md:col-span-3">
           <div class="bg-white/95 inline-block rounded-2xl p-3 mb-5">
             <img src="assets/footer-logo.webp" alt="ΣυνΕργώ — Κέντρο Ειδικών Θεραπειών — Βίγλα Ελένη" class="h-20 w-auto" />
           </div>
@@ -46,14 +45,30 @@ const NEW_FOOTER = `  <footer class="bg-brand-ink text-white/85 pt-16 pb-8">
         </div>
 
         <!-- Επικοινωνία -->
-        <div class="md:col-span-3">
+        <div class="md:col-span-2">
           <h4 class="font-bold text-white mb-4 text-sm uppercase tracking-wider">Επικοινωνία</h4>
           <ul class="space-y-2.5 text-sm">
-            <li class="flex gap-2"><span aria-hidden="true">📍</span> Σωκράτους 130<br>Αχαρναί</li>
+            <li class="flex gap-2"><span aria-hidden="true">📍</span> <span>Σωκράτους 130<br>Αχαρναί</span></li>
             <li class="flex gap-2"><span aria-hidden="true">📞</span> <a href="tel:" class="hover:text-brand-yellow">[ Τηλέφωνο ]</a></li>
-            <li class="flex gap-2"><span aria-hidden="true">✉️</span> <a href="mailto:vigla@e-synergo.gr" class="hover:text-brand-yellow break-all">vigla@e-synergo.gr</a></li>
+            <li class="flex gap-2"><span aria-hidden="true">✉️</span> <a href="mailto:vigla@e-synergo.gr" class="hover:text-brand-yellow break-all text-xs">vigla@e-synergo.gr</a></li>
             <li class="flex gap-2"><span aria-hidden="true">🕐</span> Δευ-Παρ 09:00-21:00</li>
           </ul>
+        </div>
+
+        <!-- Map preview -->
+        <div class="md:col-span-2">
+          <h4 class="font-bold text-white mb-4 text-sm uppercase tracking-wider">Βρείτε μας</h4>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Σωκράτους+130,+Αχαρναί" target="_blank" rel="noopener" class="block rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:scale-[1.02] transition" aria-label="Άνοιγμα στο Google Maps">
+            <iframe
+              src="https://www.google.com/maps?q=%CE%A3%CF%89%CE%BA%CF%81%CE%AC%CF%84%CE%BF%CF%85%CF%82%20130%2C%20%CE%91%CF%87%CE%B1%CF%81%CE%BD%CE%B1%CE%AF&output=embed"
+              width="100%"
+              height="170"
+              style="border:0; filter: opacity(0.92) grayscale(0.15); pointer-events: none;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Σωκράτους 130, Αχαρναί"
+              aria-hidden="true"></iframe>
+          </a>
         </div>
       </div>
 
@@ -85,6 +100,6 @@ for (const file of files) {
     console.log(`⚠ ${file}: no footer match found`);
   } else {
     await writeFile(file, newContent, 'utf8');
-    console.log(`✓ ${file}: footer replaced`);
+    console.log(`✓ ${file}: footer updated (with map preview)`);
   }
 }
