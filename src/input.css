@@ -4,6 +4,12 @@
 
 /* Body defaults */
 @layer base {
+  /* Scale all rem-based units by 25% — equivalent to default 125% browser zoom.
+     Tailwind uses rem for typography, spacing, sizing → everything scales proportionally. */
+  html {
+    font-size: 125%;
+  }
+
   body {
     font-family: 'Nunito', system-ui, -apple-system, sans-serif;
     background: #FFFDF8;
