@@ -9,16 +9,16 @@
   <link rel="canonical" href="https://e-synergo.gr/" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-apple.png" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="e_synergo — Κέντρο Ειδικών Θεραπειών" />
   <meta property="og:description" content="Εργοθεραπεία, Λογοθεραπεία, Ειδική Διαπαιδαγώγηση, Ψυχολογική Υποστήριξη, Συμβουλευτική Γονέων. Αχαρναί." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="el_GR" />
-  <meta property="og:image" content="assets/logo.png" />
+  <meta property="og:image" content="assets/brand-logo-og.png" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Fonts -->
@@ -27,7 +27,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="/assets/tailwind.css" />
-  <link rel="stylesheet" href="/assets/styles.css" />
+  <link rel="stylesheet" href="/assets/custom.css" />
 
   <!-- LocalBusiness Schema -->
   <script type="application/ld+json">
@@ -36,7 +36,7 @@
     "@type": "MedicalBusiness",
     "name": "e_synergo — ΣυνΕργώ",
     "description": "Κέντρο Ειδικών Θεραπειών για παιδιά και οικογένειες.",
-    "image": "https://e-synergo.gr/assets/logo.png",
+    "image": "https://e-synergo.gr/assets/brand-logo-og.png",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Σωκράτους 130 και Αθανασίου Διάκου",
@@ -68,8 +68,8 @@
     <nav class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between" aria-label="Κύρια πλοήγηση">
       <a href="/" class="block group" aria-label="ΣυνΕργώ - Αρχική">
         <picture>
-          <source media="(min-width: 768px)" srcset="/assets/header-logo-desktop.webp" />
-          <img src="/assets/header-logo-mobile.webp" alt="ΣυνΕργώ — Κέντρο Ειδικών Θεραπειών — Βίγλα Ελένη" class="h-24 md:h-28 lg:h-32 w-auto group-hover:scale-105 transition" />
+          <source media="(min-width: 768px)" srcset="/assets/brand-logo-desktop.webp" />
+          <img src="/assets/brand-logo-mobile.webp" alt="ΣυνΕργώ — Κέντρο Ειδικών Θεραπειών — Βίγλα Ελένη" class="h-24 md:h-28 lg:h-32 w-auto group-hover:scale-105 transition" />
         </picture>
       </a>
       <ul class="hidden md:flex items-center gap-5 lg:gap-7 text-sm font-semibold">
@@ -162,7 +162,7 @@
           </svg>
 
           <!-- Mascot illustration -->
-          <img src="/assets/mascot.webp" alt="" aria-hidden="true" class="float-slow relative z-10 w-full h-full object-contain" />
+          <img src="/assets/brand-mascot.webp" alt="" aria-hidden="true" class="float-slow relative z-10 w-full h-full object-contain" />
 
           <!-- Pink heart on left (hand-drawn style) -->
           <svg class="absolute top-[44%] left-[4%] w-16 h-16 text-brand-pink z-20" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -302,7 +302,7 @@
         <div class="relative max-w-md mx-auto animate-float" style="aspect-ratio: 5/6;">
           <!-- Organic rounded outer shape -->
           <div class="absolute inset-0 overflow-hidden" style="border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;">
-            <img src="/assets/room.png" alt="Ο χώρος του κέντρου μας" class="w-full h-full object-cover" />
+            <img src="/assets/room-main.png" alt="Ο χώρος του κέντρου μας" class="w-full h-full object-cover" />
           </div>
         </div>
       </div>
@@ -356,7 +356,7 @@
             </a>
           </div>
           <div class="reveal reveal-delay-1 flex justify-center md:justify-end">
-            <img src="/assets/family.webp" alt="Οικογένεια που κρατιέται από τα χέρια" class="w-full max-w-xs md:max-w-sm" loading="lazy" />
+            <img src="/assets/img-family.webp" alt="Οικογένεια που κρατιέται από τα χέρια" class="w-full max-w-xs md:max-w-sm" loading="lazy" />
           </div>
         </div>
       </div>
@@ -377,7 +377,7 @@
         <!-- Logo + tagline + social -->
         <div class="md:col-span-3">
           <div class="bg-white/95 inline-block rounded-2xl p-3 mb-5">
-            <img src="/assets/footer-logo.webp" alt="ΣυνΕργώ — Κέντρο Ειδικών Θεραπειών — Βίγλα Ελένη" class="h-28 w-auto" />
+            <img src="/assets/brand-logo-footer.webp" alt="ΣυνΕργώ — Κέντρο Ειδικών Θεραπειών — Βίγλα Ελένη" class="h-28 w-auto" />
           </div>
           <p class="font-bold text-brand-purple mb-4">Μαζί. Σε κάθε βήμα.</p>
           <div class="flex items-center gap-3">
@@ -461,6 +461,6 @@
     </div>
   </footer>
 
-  <script src="/assets/script.js"></script>
+  <script src="/assets/app.js"></script>
 </body>
 </html>

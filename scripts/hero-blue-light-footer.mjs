@@ -36,8 +36,8 @@ const replacements = [
 
   // === FOOTER: logo wrapper (remove white card on light bg) ===
   [
-    '<div class="bg-white/95 inline-block rounded-2xl p-3 mb-5">\n            <img src="/assets/footer-logo.webp"',
-    '<div class="mb-5">\n            <img src="/assets/footer-logo.webp"',
+    '<div class="bg-white/95 inline-block rounded-2xl p-3 mb-5">\n            <img src="/assets/brand-logo-footer.webp"',
+    '<div class="mb-5">\n            <img src="/assets/brand-logo-footer.webp"',
   ],
 
   // === FOOTER: tagline color ===

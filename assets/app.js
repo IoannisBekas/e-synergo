@@ -96,7 +96,7 @@ function initContactForm() {
     // If no Formspree endpoint configured, fall back to mailto
     if (!FORMSPREE_ENDPOINT) {
       setStatus(status, '⚠ Η φόρμα δεν έχει συνδεθεί ακόμα. Παρακαλώ καλέστε ή στείλτε email απευθείας.', 'warn');
-      console.warn('[e_synergo] FORMSPREE_ENDPOINT not configured in assets/script.js');
+      console.warn('[e_synergo] FORMSPREE_ENDPOINT not configured in assets/app.js');
       return;
     }
 

@@ -7,7 +7,7 @@ const NEW_FOOTER = `  <footer class="bg-brand-ink text-white/85 pt-16 pb-8">
         <!-- Logo + tagline + social -->
         <div class="md:col-span-3">
           <div class="bg-white/95 inline-block rounded-2xl p-3 mb-5">
-            <img src="assets/footer-logo.webp" alt="ΣυνΕργώ — Κέντρο Ειδικών Θεραπειών — Βίγλα Ελένη" class="h-20 w-auto" />
+            <img src="assets/brand-logo-footer.webp" alt="ΣυνΕργώ — Κέντρο Ειδικών Θεραπειών — Βίγλα Ελένη" class="h-20 w-auto" />
           </div>
           <p class="font-bold text-white mb-4">Μαζί. Σε κάθε βήμα.</p>
           <div class="flex items-center gap-3">

@@ -40,7 +40,7 @@ for (const file of files) {
   c = c.replace(
     /<div class="md:col-span-3">[\s\S]*?<div class="mb-5">\s*<img src="\/assets\/footer-logo\.webp"([^>]+)\/>\s*<\/div>\s*<p class="font-bold text-brand-purple mb-4">/,
     `<div class="md:col-span-3 flex flex-col items-start gap-5">
-          <img src="/assets/footer-logo.webp"$1/>
+          <img src="/assets/brand-logo-footer.webp"$1/>
           <p class="font-bold text-brand-purple">`
   );
 
