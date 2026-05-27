@@ -245,7 +245,7 @@ a:hover .brand-mark-light,
 }
 .float-slow-2 { animation: float-slow-2 7s ease-in-out infinite; }
 
-/* Footer credit treatment */
+/* Footer credit treatment (light theme) */
 .credit-line {
   display: inline-flex;
   align-items: center;
@@ -254,12 +254,12 @@ a:hover .brand-mark-light,
   letter-spacing: 0.14em;
   text-transform: uppercase;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color-muted);
   transition: color 0.2s ease;
 }
-.credit-line:hover { color: rgba(255, 255, 255, 0.95); }
+.credit-line:hover { color: var(--color-brand); }
 .credit-divider {
   width: 1px;
   height: 1.25rem;
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(2, 103, 193, 0.2);
 }
