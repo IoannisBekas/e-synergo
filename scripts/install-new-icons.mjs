@@ -3,7 +3,7 @@ import { readFile, writeFile, unlink, readdir } from 'node:fs/promises';
 import path from 'node:path';
 
 const ASSETS = path.resolve('assets');
-const BRAND_BLUE = '#0267C1';
+const BRAND_BLUE = '#7A99B7';
 const ORIGINAL_BLACK = /#231f20/gi;
 
 // Mapping: source file → destination file

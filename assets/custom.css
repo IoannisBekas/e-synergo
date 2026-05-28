@@ -13,8 +13,8 @@
   --color-ink: #3A4A5C;
   --color-muted: #6B7884;
   /* Primary brand color = the blue used in logo text & mascot */
-  --color-brand: #0267C1;
-  --color-brand-dark: #01529B;
+  --color-brand: #7A99B7;
+  --color-brand-dark: #5C7A99;
 }
 
 html { scroll-behavior: smooth; }
